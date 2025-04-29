@@ -12,8 +12,9 @@ public class Main {
     }
 
     /**
-     * Sorts a list of integers in ascending order
-     * @param nums the list of integers to be sorted
+     * Sorts a list of integers in either ascending or descending order
+     * @param nums the array of integers to be sorted
+     * @param ascending whether it should be sorted in ascending or descending order
      */
     public static void bubbleSort(int[] nums, boolean ascending) {
         for (int i = 0; i < nums.length - 1; i++) {
@@ -30,13 +31,17 @@ public class Main {
         }
     }
 
+    /**
+     * Sorts a list of integers in ascending order
+     * @param nums the array of integers to be sorted
+     */
     public static void bubbleSort(int[] nums) {
         bubbleSort(nums, true);
     }
 
     /**
      * Sorts a list of integers in ascending order
-     * @param nums the list of integers to be sorted
+     * @param nums the array of integers to be sorted
      */
     public static void selectionSort(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -54,7 +59,7 @@ public class Main {
 
     /**
      * Sorts a list of integers in ascending order
-     * @param nums the list of integers to be sorted
+     * @param nums the array of integers to be sorted
      */
     public static void insertionSort(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
